@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+lGsIvv6NMv5gtx51a4CNXGaveGjJ4AAa8rXlpDmbtxloQRO9xpEwe2EIHqxxBYkngPafVPugcS54B7Oeg9O9A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\am3st\\OneDrive\\Skrivbord\\aspo\\mvc-mom2\\mvc-mom2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\am3st\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

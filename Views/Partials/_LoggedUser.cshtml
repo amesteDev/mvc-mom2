@@ -1,0 +1,11 @@
+@using mvc_mom2.Models
+@{
+	var userData = ViewBag.userData as LoginModel;
+}
+
+
+<div class="userlogged">
+ <h2>Du är inloggad som:</h2>
+ <p>Ditt användarnamn är: @userData.Username<br />din favoritgenre: @userData.Genre <br />och du satte din könsidentitet till: @userData.Gender</p>
+
+</div>

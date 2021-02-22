@@ -1,0 +1,10 @@
+@{
+	ViewData["Titel"] = "Profile";
+}
+@model GuestModel
+
+<h2>Hej!</h2>
+
+<partial name="~/Views/Partials/_LoggedUser.cshtml" />
+
+<a asp-controller="Guest" asp-action="Index">Gästboken</a>

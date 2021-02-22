@@ -1,0 +1,30 @@
+@{
+	ViewData["Titel"] = "Login";
+}
+@model LoginModel
+
+<h2>@ViewBag.Greeting</h2>
+
+<form asp-controller="Login" asp-action="LoginAttempt" method="post">
+
+ <span asp-validation-for="Username"></span>
+ <label asp-for="Username">Username:</label>
+ <input asp-for="Username" /><br />
+
+ <span asp-validation-for="Genre"></span>
+ <label asp-for="Genre">Choose your favorite genre: </label>
+ <select asp-for="Genre" asp-items="Model.Genres">
+  <option value="">Pick one</option>
+ </select><br />
+
+ <span asp-validation-for="Gender"></span>
+ @foreach (var gender in Model.Genders)
+	{
+	 <input type="radio" asp-for="Gender" value="@gender" />@gender<br />
+	}
+
+
+
+ <input type="submit" value="Start voting">
+
+</form>
