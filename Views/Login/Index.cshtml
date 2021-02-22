@@ -7,17 +7,18 @@
 
 <form asp-controller="Login" asp-action="LoginAttempt" method="post">
 
- <span asp-validation-for="Username"></span>
- <label asp-for="Username">Username:</label>
+ <span asp-validation-for="Username" class="err"></span><br />
+ <label asp-for="Username">Username:</label><br />
  <input asp-for="Username" /><br />
 
- <span asp-validation-for="Genre"></span>
- <label asp-for="Genre">Choose your favorite genre: </label>
+ <span asp-validation-for="Genre" class="err"></span><br />
+ <label asp-for="Genre">Choose your favorite genre: </label><br />
  <select asp-for="Genre" asp-items="Model.Genres">
   <option value="">Pick one</option>
  </select><br />
 
- <span asp-validation-for="Gender"></span>
+ <span asp-validation-for="Gender" class="err"></span><br />
+ <label asp-for="Gender"></label><br />
  @foreach (var gender in Model.Genders)
 	{
 	 <input type="radio" asp-for="Gender" value="@gender" />@gender<br />
@@ -25,6 +26,6 @@
 
 
 
- <input type="submit" value="Start voting">
+ <input type="submit" value="Login">
 
 </form>

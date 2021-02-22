@@ -84,3 +84,11 @@ textarea {
     resize: none;
     width: 75%;
 }
+
+label {
+    font-weight: bold;
+}
+
+.err {
+    color: red;
+}

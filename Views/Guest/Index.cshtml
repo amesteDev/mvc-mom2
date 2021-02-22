@@ -6,18 +6,18 @@
 
 <form asp-controller="Guest" asp-action="AddPost" method="post"> 
 
- <span asp-validation-for="User" class="errtext"></span>
+ <span asp-validation-for="User" class="errtext"></span><br />
  <label asp-for="User">Namn:</label><br />
  <input asp-for="User" /><br />
 
- <span asp-validation-for="Title" class="errtext"></span>
+ <span asp-validation-for="Title" class="errtext"></span><br />
  <label asp-for="Title">Titel: </label><br />
  <input asp-for="Title"><br />
 
- <span asp-validation-for="GuestPost" class="errtext"></span>
+ <span asp-validation-for="GuestPost" class="errtext"></span><br />
  <label asp-for="GuestPost">Inlägg: </label><br />
  <textarea asp-for="GuestPost"></textarea><br />
- <input type="submit" value="Login">
+ <input type="submit" value="Spara">
 
 </form>
 

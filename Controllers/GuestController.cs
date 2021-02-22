@@ -40,8 +40,13 @@ namespace mvc_mom2.Controllers
 				ViewBag.okmsg = "Inlägg sparat!";
 				return RedirectToAction("Index");
 			} else{
-				ViewBag.okmsg = "Fyll i all fält korrekt!";
-				return View();
+				string user = HttpContext.Session.GetString("user");
+				LoginModel userData = JsonConvert.DeserializeObject<LoginModel>(user);
+				ViewBag.userData = userData;
+				List<GuestModel> guestposts = getData();
+				guestposts.Reverse();
+				ViewData["options"] = guestposts;
+				return View("Index");
 			}
 		}
 
